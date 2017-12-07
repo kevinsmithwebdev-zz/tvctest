@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+}
+.memberDetail {
+  /*margin-left: 25px;*/
+  flex-grow: 10;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
