@@ -7,7 +7,7 @@ for (let i=1; i<=20; i++) {
   let member = {
     memberId: i,
     firstName: 'First' + numStr,
-    LastName: 'Last' + numStr,
+    lastName: 'Last' + numStr,
     email: 'member' + numStr + '@email.com',
     exempt: false,
     comment: 'comment ' + numStr,
@@ -20,8 +20,10 @@ for (let i=1; i<=20; i++) {
   members.push(member)
 }
 
-members[7].exempt='true'
-members[17].exempt='true'
+members[7].exempt=true
+members[17].exempt=true
+members[4].active=false
+members[14].active=false
 members[1].exclusions = ['roleId1', 'roleId2']
 members[2].exclusions = ['roleId3', 'roleId4']
 members[3].exclusions = ['roleId5', 'roleId6']
